@@ -1,7 +1,7 @@
 // URL parametrelerini al
 const urlParams = new URLSearchParams(window.location.search);
-const serverIp = urlParams.get('ip') || '45.155.123.456'; // Varsayılan IP
-const serverPort = urlParams.get('port') || '30120'; // Varsayılan port
+const serverIp = urlParams.get('ip') || '212.16.87.26'; // Varsayılan IP
+const serverPort = urlParams.get('port') || '27015'; // Varsayılan port
 
 // Sayfa yüklendiğinde
 document.addEventListener('DOMContentLoaded', function() {
