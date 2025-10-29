@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fivem Sunucusuna Bağlan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://cdn.discordapp.com/attachments/1065644557192937472/1065644646683902042/fivem_icon.png" alt="Fivem Logo">
+                <h1>FIVEM SUNUCUSU</h1>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="server-info">
+                <div class="info-card">
+                    <h2>🎮 SUNUCUYA HOŞ GELDİN</h2>
+                    <div class="server-details">
+                        <div class="detail-item">
+                            <span class="label">🌐 Sunucu IP:</span>
+                            <span class="value" id="serverIp">Yükleniyor...</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">🔌 Port:</span>
+                            <span class="value" id="serverPort">Yükleniyor...</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">👥 Durum:</span>
+                            <span class="status online" id="serverStatus">Çevrimiçi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="connect-buttons">
+                <button class="btn primary" onclick="connectToServer()">
+                    🚀 HIZLI BAĞLAN
+                </button>
+                <button class="btn secondary" onclick="copyConnectCommand()">
+                    📋 F8 KOMUTUNU KOPYALA
+                </button>
+            </div>
+
+            <div class="instructions">
+                <h3>📖 Bağlanma Talimatları</h3>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <p>Fivem uygulamasının açık olduğundan emin olun</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <p>"Hızlı Bağlan" butonuna tıklayın</p>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <p>Fivem'in açılmasını onaylayın</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2024 Fivem Sunucusu | Tüm hakları saklıdır</p>
+        </div>
+    </div>
+
+    <!-- Başarılı mesajı -->
+    <div id="toast" class="toast">Komut panoya kopyalandı! 🎉</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
